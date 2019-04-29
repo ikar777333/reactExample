@@ -1,8 +1,8 @@
 import React from "react"
 
-function Footer() {
+function Footer(props) {
     return (
-        <footer>This is the footer</footer>
+        <footer>{props.test.text}</footer>
     )
 }
 

@@ -7,9 +7,9 @@ import Footer from "./components/Footer"
 function App() {
     return (
         <div>
-            <Header />
+            <Header text="test" />
             <MainContent />
-            <Footer />
+            <Footer test={{text:"test"}}/>
         </div>
     )
 }

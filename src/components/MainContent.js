@@ -1,8 +1,15 @@
 import React from "react"
+import TodoItem from "./TodoItem"
+import todosData from "./../Data"
 
 function MainContent() {
+
+    const todoItems = todosData.map(item => <TodoItem key={item.id} item={item}/>)
+
     return (
-        <main>This is the main section</main>
+        <div className="todo-list">
+            {todoItems}
+        </div>
     )
 }
 
